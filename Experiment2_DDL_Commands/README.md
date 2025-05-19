@@ -104,28 +104,28 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
---
--- Paste Question 1 here
+![1](https://github.com/user-attachments/assets/89903b03-48ca-45a7-a337-9b8131d2c86a)
 
 ```sql
--- Paste your SQL code below for Question 1
+insert into Products(Name,Category,price,Stock)
+values("Smartphone","Electronics",800,150),
+("Headphones","Accessories",200,300);
 ```
 
 **Output:**
-
-![Output1](output.png)
+![1 o](https://github.com/user-attachments/assets/77001c2e-4910-49ed-837a-bc6b7db51715)
 
 **Question 2**
----
--- Paste Question 2 here
+![2](https://github.com/user-attachments/assets/6bba4576-2100-4737-846b-3eedc5adee12)
 
 ```sql
--- Paste your SQL code below for Question 2
+ create table item(
+item_id varchar(50) primary key,item_desc varchar(50) not null,
+rate int not null,icom_id char(4),foreign key(icom_id)
+references company(com_id) on update set null on delete set null);
 ```
-
 **Output:**
-
-![Output2](output.png)
+![2 0](https://github.com/user-attachments/assets/0301bca1-f05f-44d3-8bcc-0da4d06e008a)
 
 **Question 3**
 ---
