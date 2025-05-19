@@ -128,101 +128,103 @@ references company(com_id) on update set null on delete set null);
 ![2 0](https://github.com/user-attachments/assets/0301bca1-f05f-44d3-8bcc-0da4d06e008a)
 
 **Question 3**
----
--- Paste Question 3 here
+![3](https://github.com/user-attachments/assets/55cc29d4-faf0-40da-b00e-251bd85836b6)
 
 ```sql
--- Paste your SQL code below for Question 3
+create table Department(
+DepartmentID int primary key,
+DepartmentName varchar(50) UNIQUE NOT NULL,
+Location varchar(100));
 ```
 
 **Output:**
-
-![Output3](output.png)
+![3 o](https://github.com/user-attachments/assets/33d99b12-ed9e-4e8d-a86c-62c3514a31e9)
 
 **Question 4**
----
--- Paste Question 4 here
+![4](https://github.com/user-attachments/assets/2f440e97-c8de-4da4-a654-2a4e7ff2012f)
 
 ```sql
--- Paste your SQL code below for Question 4
+create table jobs(
+job_id int,
+job_title varchar(50) default "",
+min_salary int default 8000,max_salary int);create table jobs(
+job_id int,
+job_title varchar(50) default "",
+min_salary int default 8000,max_salary int);
 ```
 
 **Output:**
-
-![Output4](output.png)
+![4 o](https://github.com/user-attachments/assets/bb3d038b-73f6-42cc-887e-689699abd9ca)
 
 **Question 5**
----
--- Paste Question 5 here
+![5](https://github.com/user-attachments/assets/3f8d01c9-375f-452e-a819-18e089a40670)
 
 ```sql
--- Paste your SQL code below for Question 5
+alter table Employees add column Date_of_joi Date;
+alter table employees rename column job_title to Designation;
 ```
 
 **Output:**
-
-![Output5](output.png)
+![5 o](https://github.com/user-attachments/assets/5003fa2b-e185-408d-8587-f144688bc0a2)
 
 **Question 6**
----
--- Paste Question 6 here
+![6](https://github.com/user-attachments/assets/37da834d-5076-41bf-9639-bda333dd2440)
 
 ```sql
--- Paste your SQL code below for Question 6
+insert into Products(ProductID,ProductName,Price,Stock)
+select ProductID,ProductName,Price,Stock from Discontinued_products;
 ```
 
 **Output:**
-
-![Output6](output.png)
+![6 o](https://github.com/user-attachments/assets/19e7738a-3b07-4585-9538-c93f05021982)
 
 **Question 7**
----
--- Paste Question 7 here
+![7](https://github.com/user-attachments/assets/1b6923b4-c211-41df-8688-538b00b8850e)
 
 ```sql
--- Paste your SQL code below for Question 7
+alter table Companies add column designation varchar(50);
+alter table Companies add column net_salary number;
 ```
 
 **Output:**
-
-![Output7](output.png)
+![7 o](https://github.com/user-attachments/assets/48cc1e52-b2fe-4bee-ba7b-7168b16674a5)
 
 **Question 8**
----
--- Paste Question 8 here
+![8](https://github.com/user-attachments/assets/c9615ae7-96f9-4438-baa7-c74b28d170e5)
 
 ```sql
--- Paste your SQL code below for Question 8
+create table item(item_id varchar(50) primary key,item_desc varchar(50) not null,
+rate int not null,icom_id char(4),
+foreign key(icom_id) references company(com_id) on update cascade on delete cascade);
 ```
 
 **Output:**
 
-![Output8](output.png)
+![8 o](https://github.com/user-attachments/assets/77c45098-4442-4ecc-9a9e-ea4691a765bb)
 
 **Question 9**
----
--- Paste Question 9 here
+
+![9](https://github.com/user-attachments/assets/577e4532-9084-485a-bea2-53f0289b0fa1)
 
 ```sql
--- Paste your SQL code below for Question 9
+insert into Student_details(RollNo,Name,Gender) values(204,"Samuel Black","M");
 ```
 
 **Output:**
 
-![Output9](output.png)
+![9 o](https://github.com/user-attachments/assets/9ba15757-3d03-493e-ad6c-ae569ebfba6f)
 
 **Question 10**
----
--- Paste Question 10 here
+
+![10](https://github.com/user-attachments/assets/f141c0cc-073b-4ddc-b4ae-3a9af7047a10)
 
 ```sql
--- Paste your SQL code below for Question 10
+create table Customers(CustomerID INTEGER,Name TEXT,Email TEXT,JoinDate DATETIME);
 ```
 
 **Output:**
 
-![Output10](output.png)
-
+![10 o](https://github.com/user-attachments/assets/b99a95a7-5678-4814-8939-dd6c15639382)
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
