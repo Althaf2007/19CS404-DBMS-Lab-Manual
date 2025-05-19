@@ -168,6 +168,7 @@ alter table employees rename column job_title to Designation;
 ![5 o](https://github.com/user-attachments/assets/5003fa2b-e185-408d-8587-f144688bc0a2)
 
 **Question 6**
+
 ![6](https://github.com/user-attachments/assets/37da834d-5076-41bf-9639-bda333dd2440)
 
 ```sql
